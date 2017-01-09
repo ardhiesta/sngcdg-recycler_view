@@ -15,9 +15,12 @@ import luv.linux.recyclerview.model.Person;
 
 /**
  * Created by linuxluv on 1/5/17.
+ *
+ * class sebagai adapter untuk RecyclerView
  */
 
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> {
+    //persons : data yang ditampilkan ke RecyclerView
     List<Person> persons;
 
     public RVAdapter(List<Person> persons){
@@ -48,6 +51,10 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
         super.onAttachedToRecyclerView(recyclerView);
     }
 
+    /* binding dari atribut person ke komponen-komponen layout di dalam CardView
+     * nama masuk ke TextView personName
+     * usia masuk ke TextView personAge
+     * foto masuk ke ImageView personPhoto */
     public static class PersonViewHolder extends RecyclerView.ViewHolder {
         CardView cv;
         TextView personName;

@@ -2,6 +2,9 @@ package luv.linux.recyclerview.model;
 
 /**
  * Created by linuxluv on 1/5/17.
+ *
+ * class POJO untuk mewakili bject Person
+ * memiliki atribut: nama, usia, id foto
  */
 
 public class Person {
